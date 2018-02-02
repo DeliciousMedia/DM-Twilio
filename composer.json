@@ -1,0 +1,13 @@
+{
+  "name": "deliciousmedia/dm-twilio",
+  "description": "DM Twilio Notifications",
+  "keywords": ["wordpress", "plugin", "twilio", "sms"],
+  "homepage": "https://github.com/DeliciousMedia/DM-Twilio",
+  "license": "GPL-3.0-or-later",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=7.0",
+    "composer/installers": "v1.0.6",
+    "twilio/sdk": ">=5.0"
+  }
+}
