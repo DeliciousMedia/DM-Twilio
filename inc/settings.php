@@ -170,18 +170,18 @@ function dmwilio_admin_settings_warning() {
 	}
 	?>
 	<div class="notice notice-warning is-dismissible">
-		<p><?php _e( 'DM Twilio is not setup, please visit the <a href="' . esc_url( admin_url( '/options-general.php?page=dm_twilio' ) ) . '">settings page</a> to complete setup.', 'dmtwilio' ); ?></p>
+		<p><?php _esc_html_e( 'DM Twilio is not setup, please visit the <a href="' . esc_url( admin_url( '/options-general.php?page=dm_twilio' ) ) . '">settings page</a> to complete setup.', 'dmtwilio' ); ?></p>
 	</div>
 	<?php
 }
 add_action( 'admin_notices', 'dmwilio_admin_settings_warning' );
 
- /*
- * Add a link to the settings page to the plugin list.
- *
- * @param  array  $links Existing links.
- * @return array
- */
+ /**
+  * Add a link to the settings page to the plugin list.
+  *
+  * @param  array $links Existing links.
+  * @return array
+  */
 function dmtwilio_plugin_settings_link( $links ) {
 	$links = array_merge(
 		[

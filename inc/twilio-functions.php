@@ -20,7 +20,7 @@ use Twilio\Rest\Client;
 function dmwilio_admin_twilio_sdk_error() {
 	?>
 	<div class="notice notice-error">
-		<p><?php _e( 'DM Twilio requires the Twilio SDK, but it isn\'t loaded.', 'dmtwilio' ); ?></p>
+		<p><?php _esc_html_e( 'DM Twilio requires the Twilio SDK, but it isn\'t loaded.', 'dmtwilio' ); ?></p>
 	</div>
 	<?php
 }
@@ -220,10 +220,10 @@ function dmtwilio_get_message_id_from_sid( $sid ) {
  */
 function dmtwilio_store_message_status( $sid, $status, $recipient = '', $message = '' ) {
 
+	do_action( 'dmtwilio_before_store_message_status', $sid, $status );
+
 	// Prepend our prefix to the status.
 	$status = 'dmtwilio_' . $status;
-
-	do_action( 'dmtwilio_before_store_message_status', $sid, $status );
 
 	if ( ! term_exists( $status, 'dmtwilio_message_status' ) ) {
 		return new WP_Error( 'DMTWILIO_INVALID_STATUS', 'Tried to set message ' . $sid . ' to status ' . $status . ' but that status does not exist.' );
