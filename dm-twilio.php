@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: DM Twilio Notifications
- * Plugin URI: https://www.deliciousmedia.co.uk/
+ * Plugin URI: https://github.com/DeliciousMedia/DM-Twilio
  * Description: Send SMS via Twilio and track message delivery within WordPress.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Delicious Media Limited
  * Author URI: https://www.deliciousmedia.co.uk
  * Text Domain: dm-twilio
@@ -44,7 +44,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Definitions
  */
-define( 'DMTWILIO_VERSION', '1.0.0' );
+define( 'DMTWILIO_VERSION', '1.0.1' );
 define( 'DMTWILIO_PLUGIN_PATH', plugin_basename( __FILE__ ) );
 
 // Allow overriding the callback URL, useful for development.
