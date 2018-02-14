@@ -170,7 +170,7 @@ function dmwilio_admin_settings_warning() {
 	}
 	?>
 	<div class="notice notice-warning is-dismissible">
-		<p><?php _esc_html_e( 'DM Twilio is not setup, please visit the <a href="' . esc_url( admin_url( '/options-general.php?page=dm_twilio' ) ) . '">settings page</a> to complete setup.', 'dmtwilio' ); ?></p>
+		<p><?php printf( 'DM Twilio is not setup, please visit the <a href="%s">settings page</a> to complete setup.', admin_url( '/options-general.php?page=dm_twilio' ) ); ?></p>
 	</div>
 	<?php
 }
