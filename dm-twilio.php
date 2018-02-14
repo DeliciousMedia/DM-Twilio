@@ -3,7 +3,7 @@
  * Plugin Name: DM Twilio Notifications
  * Plugin URI: https://github.com/DeliciousMedia/DM-Twilio
  * Description: Send SMS via Twilio and track message delivery within WordPress.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Delicious Media Limited
  * Author URI: https://www.deliciousmedia.co.uk
  * Text Domain: dm-twilio
